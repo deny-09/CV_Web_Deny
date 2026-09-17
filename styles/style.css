@@ -106,7 +106,7 @@ section .section-title {
 
 
 .header-section .header-skill:hover i {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
 }
 
 
@@ -176,6 +176,10 @@ section .section-title {
 
 .certificate-section .card {
     height: 100%;
+}
+
+.certificate-section .card h6 {
+    min-height: 72px;
 }
 
 
