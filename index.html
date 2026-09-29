@@ -685,82 +685,30 @@
 
     <!-- portfolio -->
     <section class="portfolio-section" id="portfolio">
-        <div class="container">
+    <div class="container">
 
-            <p class="text-orange fw-semibold">Portfolio</p>
-            <h2 class="section-title mb-5">My Portfolio</h2>
+        <p class="text-orange fw-semibold">Portfolio</p>
+        <h2 class="section-title mb-5">My Portfolio</h2>
 
-            <div class="row g-4">
+        <!-- PORTFOLIO SLIDER -->
+        <div class="swiper portfolio-swiper">
+
+            <div class="swiper-wrapper">
 
                 <!-- PostgreSQL -->
-                <div class="col-md-4">
+                <div class="swiper-slide">
                     <div class="card h-100">
 
-                        <div id="postgresqlCarousel" class="carousel slide">
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active">
-                                    <img src="img_portfolio/img_portfolio_postgresql/img_1.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="PostgreSQL Portfolio 1" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_postgresql/img_2.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="PostgreSQL Portfolio 2" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_postgresql/img_3.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="PostgreSQL Portfolio 3" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_postgresql/img_4.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="PostgreSQL Portfolio 4" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_postgresql/img_5.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="PostgreSQL Portfolio 5" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_postgresql/img_6.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="PostgreSQL Portfolio 6" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_postgresql/img_7.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="PostgreSQL Portfolio 7" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                            </div>
-
-                            <button class="carousel-control-prev"
-                                    type="button"
-                                    data-bs-target="#postgresqlCarousel"
-                                    data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-
-                            <button class="carousel-control-next"
-                                    type="button"
-                                    data-bs-target="#postgresqlCarousel"
-                                    data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-
-                        </div>
+                        <img src="img_portfolio/img_portfolio_postgresql/img_1.png"
+                             class="card-img-top portfolio-cover"
+                             alt="PostgreSQL"
+                             data-project="postgresql"
+                             data-index="0"
+                             style="cursor: pointer;">
 
                         <div class="card-body">
                             <h5 class="fw-bold">PostgreSQL</h5>
+
                             <p class="text-secondary mb-0">
                                 Database project menggunakan PostgreSQL.
                             </p>
@@ -771,68 +719,19 @@
 
 
                 <!-- SQL Server -->
-                <div class="col-md-4">
+                <div class="swiper-slide">
                     <div class="card h-100">
 
-                        <div id="sqlserverCarousel" class="carousel slide">
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active">
-                                    <img src="img_portfolio/img_portfolio_sqlserver/img_1.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="SQL Server Portfolio 1" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_sqlserver/img_2.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="SQL Server Portfolio 2" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_sqlserver/img_3.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="SQL Server Portfolio 3" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_sqlserver/img_4.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="SQL Server Portfolio 4" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_sqlserver/img_5.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="SQL Server Portfolio 5" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_sqlserver/img_6.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="SQL Server Portfolio 6" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                            </div>
-
-                            <button class="carousel-control-prev"
-                                    type="button"
-                                    data-bs-target="#sqlserverCarousel"
-                                    data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-
-                            <button class="carousel-control-next"
-                                    type="button"
-                                    data-bs-target="#sqlserverCarousel"
-                                    data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-
-                        </div>
+                        <img src="img_portfolio/img_portfolio_sqlserver/img_1.png"
+                             class="card-img-top portfolio-cover"
+                             alt="SQL Server"
+                             data-project="sqlserver"
+                             data-index="0"
+                             style="cursor: pointer;">
 
                         <div class="card-body">
                             <h5 class="fw-bold">SQL Server</h5>
+
                             <p class="text-secondary mb-0">
                                 Database project menggunakan Microsoft SQL Server.
                             </p>
@@ -843,74 +742,19 @@
 
 
                 <!-- MySQL -->
-                <div class="col-md-4">
+                <div class="swiper-slide">
                     <div class="card h-100">
 
-                        <div id="mysqlCarousel" class="carousel slide">
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active">
-                                    <img src="img_portfolio/img_portfolio_mysql/img_1.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="MySQL Portfolio 1" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_mysql/img_2.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="MySQL Portfolio 2" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_mysql/img_3.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="MySQL Portfolio 3" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_mysql/img_4.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="MySQL Portfolio 4" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_mysql/img_5.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="MySQL Portfolio 5" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_mysql/img_6.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="MySQL Portfolio 6" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <img src="img_portfolio/img_portfolio_mysql/img_7.png"
-                                        class="d-block w-100 portfolio-img"
-                                        alt="MySQL Portfolio 7" data-bs-toggle="modal" data-bs-target="#portfolioModal" style="cursor: pointer;">
-                                </div>
-
-                            </div>
-
-                            <button class="carousel-control-prev"
-                                    type="button"
-                                    data-bs-target="#mysqlCarousel"
-                                    data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-
-                            <button class="carousel-control-next"
-                                    type="button"
-                                    data-bs-target="#mysqlCarousel"
-                                    data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-
-                        </div>
+                        <img src="img_portfolio/img_portfolio_mysql/img_1.png"
+                             class="card-img-top portfolio-cover"
+                             alt="MySQL"
+                             data-project="mysql"
+                             data-index="0"
+                             style="cursor: pointer;">
 
                         <div class="card-body">
                             <h5 class="fw-bold">MySQL</h5>
+
                             <p class="text-secondary mb-0">
                                 Database project menggunakan MySQL.
                             </p>
@@ -919,37 +763,106 @@
                     </div>
                 </div>
 
+
+                <!-- Excel -->
+                <div class="swiper-slide">
+                    <div class="card h-100">
+
+                        <img src="img_portfolio/img_portfolio_excel/img_1.png"
+                             class="card-img-top portfolio-cover"
+                             alt="Microsoft Excel"
+                             data-project="excel"
+                             data-index="0"
+                             style="cursor: pointer;">
+
+                        <div class="card-body">
+                            <h5 class="fw-bold">Microsoft Excel</h5>
+
+                            <p class="text-secondary mb-0">
+                                Data processing dan automation menggunakan Microsoft Excel.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+
+
+            <!-- PORTFOLIO NAVIGATION -->
+            <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+
+                <button class="btn btn-light d-flex align-items-center justify-content-center portfolio-prev">
+                    <i class="bx bx-left-arrow-alt fs-5"></i>
+                </button>
+
+                <button class="btn btn-light d-flex align-items-center justify-content-center portfolio-next">
+                    <i class="bx bx-right-arrow-alt fs-5"></i>
+                </button>
+
+            </div>
+
+
+            <!-- PORTFOLIO SCROLLBAR -->
+            <div class="swiper-scrollbar portfolio-scrollbar mt-3"></div>
+
         </div>
+
+    </div>
     </section>
 
-    <!-- PORTFOLIO MODAL -->
-    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
 
-                <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModalTitle">
-                        Portfolio
-                    </h5>
+<!-- PORTFOLIO MODAL -->
+<div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
 
-                    <button type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close">
-                    </button>
-                </div>
+    <div class="modal-dialog modal-xl modal-dialog-centered">
 
-                <div class="modal-body text-center">
-                    <img id="portfolioModalImage"
-                        src=""
-                        alt="Portfolio"
-                        class="img-fluid">
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="portfolioModalTitle">
+                    Portfolio
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <!-- IMAGE SLIDER -->
+                <div class="swiper portfolio-detail-swiper">
+
+                    <div class="swiper-wrapper">
+                        <!-- gambar akan dimasukkan oleh JavaScript -->
+                    </div>
+
+
+                    <!-- PREV -->
+                    <div class="swiper-button-prev portfolio-detail-prev"></div>
+
+                    <!-- NEXT -->
+                    <div class="swiper-button-next portfolio-detail-next"></div>
+
+
+                    <!-- SCROLLBAR -->
+                    <div class="swiper-scrollbar portfolio-detail-scrollbar"></div>
+
                 </div>
 
             </div>
+
         </div>
+
     </div>
+
+</div>
 
     <!-- work periode -->
     <section class="timeline-section" id="timeline">
@@ -1113,23 +1026,340 @@
 
 
 <!-- JAVASCRIPT PORTFOLIO -->
-    <script>
-        const portfolioImages = document.querySelectorAll('.portfolio-img');
-        const portfolioModalImage = document.getElementById('portfolioModalImage');
-        const portfolioModalTitle = document.getElementById('portfolioModalTitle');
+<script>
 
-        portfolioImages.forEach(function(image) {
+    /* =====================================================
+       DATA PORTFOLIO
+       ===================================================== */
 
-            image.addEventListener('click', function() {
+    const portfolioProjects = {
 
-                portfolioModalImage.src = image.src;
-                portfolioModalImage.alt = image.alt;
-                portfolioModalTitle.textContent = image.alt;
+        postgresql: {
+            title: "PostgreSQL",
+            images: [
+                "img_portfolio/img_portfolio_postgresql/img_1.png",
+                "img_portfolio/img_portfolio_postgresql/img_2.png",
+                "img_portfolio/img_portfolio_postgresql/img_3.png",
+                "img_portfolio/img_portfolio_postgresql/img_4.png",
+                "img_portfolio/img_portfolio_postgresql/img_5.png",
+                "img_portfolio/img_portfolio_postgresql/img_6.png",
+                "img_portfolio/img_portfolio_postgresql/img_7.png"
+            ]
+        },
+
+
+        sqlserver: {
+            title: "SQL Server",
+            images: [
+                "img_portfolio/img_portfolio_sqlserver/img_1.png",
+                "img_portfolio/img_portfolio_sqlserver/img_2.png",
+                "img_portfolio/img_portfolio_sqlserver/img_3.png",
+                "img_portfolio/img_portfolio_sqlserver/img_4.png",
+                "img_portfolio/img_portfolio_sqlserver/img_5.png",
+                "img_portfolio/img_portfolio_sqlserver/img_6.png"
+            ]
+        },
+
+
+        mysql: {
+            title: "MySQL",
+            images: [
+                "img_portfolio/img_portfolio_mysql/img_1.png",
+                "img_portfolio/img_portfolio_mysql/img_2.png",
+                "img_portfolio/img_portfolio_mysql/img_3.png",
+                "img_portfolio/img_portfolio_mysql/img_4.png",
+                "img_portfolio/img_portfolio_mysql/img_5.png",
+                "img_portfolio/img_portfolio_mysql/img_6.png",
+                "img_portfolio/img_portfolio_mysql/img_7.png"
+            ]
+        },
+
+
+        excel: {
+            title: "Microsoft Excel",
+            images: [
+                "img_portfolio/img_portfolio_excel/img_1.png",
+                "img_portfolio/img_portfolio_excel/img_2.png",
+                "img_portfolio/img_portfolio_excel/img_3.png",
+                "img_portfolio/img_portfolio_excel/img_4.png",
+                "img_portfolio/img_portfolio_excel/img_5.png",
+                "img_portfolio/img_portfolio_excel/img_6.png"
+
+            ]
+        }
+
+    };
+
+
+
+    /* =====================================================
+       PORTFOLIO SLIDER UTAMA
+       ===================================================== */
+
+    const portfolioSwiper = new Swiper('.portfolio-swiper', {
+
+        slidesPerView: 3,
+
+        spaceBetween: 30,
+
+        grabCursor: true,
+
+        navigation: {
+            nextEl: '.portfolio-next',
+            prevEl: '.portfolio-prev'
+        },
+
+        scrollbar: {
+            el: '.portfolio-scrollbar',
+            draggable: true
+        },
+
+        breakpoints: {
+
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 25
+            },
+
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+
+        }
+
+    });
+
+
+
+    /* =====================================================
+       ELEMENT MODAL
+       ===================================================== */
+
+    const portfolioModal =
+        document.getElementById('portfolioModal');
+
+    const portfolioModalTitle =
+        document.getElementById('portfolioModalTitle');
+
+    const portfolioDetailWrapper =
+        document.querySelector(
+            '.portfolio-detail-swiper .swiper-wrapper'
+        );
+
+
+
+    /* =====================================================
+       DETAIL SWIPER
+       ===================================================== */
+
+    let portfolioDetailSwiper = null;
+
+
+
+    /* =====================================================
+       KETIKA COVER PORTFOLIO DIKLIK
+       ===================================================== */
+
+    const portfolioCovers =
+        document.querySelectorAll('.portfolio-cover');
+
+
+    portfolioCovers.forEach(function(cover) {
+
+        cover.addEventListener('click', function() {
+
+            const projectName =
+                cover.dataset.project;
+
+            const startIndex =
+                parseInt(cover.dataset.index) || 0;
+
+            const project =
+                portfolioProjects[projectName];
+
+
+            if (!project) {
+                return;
+            }
+
+
+
+            /* Judul modal */
+
+            portfolioModalTitle.textContent =
+                project.title;
+
+
+
+            /* Hapus gambar lama */
+
+            portfolioDetailWrapper.innerHTML = "";
+
+
+
+            /* Masukkan semua gambar project */
+
+            project.images.forEach(function(imagePath) {
+
+                const slide =
+                    document.createElement('div');
+
+                slide.className =
+                    'swiper-slide';
+
+
+                slide.innerHTML = `
+                    <div class="swiper-zoom-container">
+                        <img
+                            src="${imagePath}"
+                            alt="${project.title}"
+                            class="portfolio-detail-image"
+                        >
+                    </div>
+                `;
+
+
+                portfolioDetailWrapper.appendChild(slide);
 
             });
 
+
+
+            /* Jika Swiper sebelumnya masih ada,
+               hancurkan terlebih dahulu */
+
+            if (portfolioDetailSwiper) {
+
+                portfolioDetailSwiper.destroy(
+                    true,
+                    true
+                );
+
+                portfolioDetailSwiper = null;
+
+            }
+
+
+
+            /* Tampilkan modal */
+
+            const modal =
+                bootstrap.Modal.getOrCreateInstance(
+                    portfolioModal
+                );
+
+            modal.show();
+
+
+
+            /* Buat Swiper setelah modal tampil */
+
+            portfolioModal.addEventListener(
+                'shown.bs.modal',
+                function initializeDetailSwiper() {
+
+
+                    portfolioDetailSwiper =
+                        new Swiper(
+                            '.portfolio-detail-swiper',
+                            {
+
+                                initialSlide:
+                                    startIndex,
+
+                                spaceBetween: 20,
+
+                                grabCursor: true,
+
+                                zoom: {
+                                    maxRatio: 4
+                                },
+
+                                navigation: {
+
+                                    nextEl:
+                                        '.portfolio-detail-next',
+
+                                    prevEl:
+                                        '.portfolio-detail-prev'
+
+                                },
+
+                                scrollbar: {
+
+                                    el:
+                                        '.portfolio-detail-scrollbar',
+
+                                    draggable: true
+
+                                },
+
+                                keyboard: {
+
+                                    enabled: true
+
+                                },
+
+                                observer: true,
+
+                                observeParents: true
+
+                            }
+                        );
+
+
+                    /* Hanya jalankan event ini
+                       satu kali */
+
+                    portfolioModal.removeEventListener(
+                        'shown.bs.modal',
+                        initializeDetailSwiper
+                    );
+
+                },
+                {
+                    once: true
+                }
+            );
+
         });
-    </script>
+
+    });
+
+
+
+    /* =====================================================
+       KETIKA MODAL DITUTUP
+       ===================================================== */
+
+    portfolioModal.addEventListener(
+        'hidden.bs.modal',
+        function() {
+
+            if (portfolioDetailSwiper) {
+
+                portfolioDetailSwiper.destroy(
+                    true,
+                    true
+                );
+
+                portfolioDetailSwiper = null;
+
+            }
+
+
+            portfolioDetailWrapper.innerHTML = "";
+
+        }
+    );
+
+</script>
 
 
 </body>
