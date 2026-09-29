@@ -812,47 +812,49 @@
     </section>
 
 
-<!-- PORTFOLIO MODAL -->
-<div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+    <!-- PORTFOLIO MODAL -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
 
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
 
-        <div class="modal-content">
+            <div class="modal-content">
 
-            <div class="modal-header">
+                <div class="modal-header">
 
-                <h5 class="modal-title" id="portfolioModalTitle">
-                    Portfolio
-                </h5>
+                    <h5 class="modal-title" id="portfolioModalTitle">
+                        Portfolio
+                    </h5>
 
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close">
-                </button>
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                    </button>
 
-            </div>
+                </div>
 
 
-            <div class="modal-body">
+                <div class="modal-body">
 
-                <!-- IMAGE SLIDER -->
-                <div class="swiper portfolio-detail-swiper">
+                    <!-- IMAGE SLIDER -->
+                    <div class="swiper portfolio-detail-swiper">
 
-                    <div class="swiper-wrapper">
-                        <!-- gambar akan dimasukkan oleh JavaScript -->
+                        <div class="swiper-wrapper">
+                            <!-- gambar akan dimasukkan oleh JavaScript -->
+                        </div>
+
+
+                        <!-- PREV -->
+                        <div class="swiper-button-prev portfolio-detail-prev"></div>
+
+                        <!-- NEXT -->
+                        <div class="swiper-button-next portfolio-detail-next"></div>
+
+
+                        <!-- SCROLLBAR -->
+                        <div class="swiper-scrollbar portfolio-detail-scrollbar"></div>
+
                     </div>
-
-
-                    <!-- PREV -->
-                    <div class="swiper-button-prev portfolio-detail-prev"></div>
-
-                    <!-- NEXT -->
-                    <div class="swiper-button-next portfolio-detail-next"></div>
-
-
-                    <!-- SCROLLBAR -->
-                    <div class="swiper-scrollbar portfolio-detail-scrollbar"></div>
 
                 </div>
 
@@ -861,8 +863,6 @@
         </div>
 
     </div>
-
-</div>
 
     <!-- work periode -->
     <section class="timeline-section" id="timeline">
@@ -1026,340 +1026,343 @@
 
 
 <!-- JAVASCRIPT PORTFOLIO -->
-<script>
+    <script>
 
-    /* =====================================================
-       DATA PORTFOLIO
-       ===================================================== */
+        /* =====================================================
+        DATA PORTFOLIO
+        ===================================================== */
 
-    const portfolioProjects = {
+        const portfolioProjects = {
 
-        postgresql: {
-            title: "PostgreSQL",
-            images: [
-                "img_portfolio/img_portfolio_postgresql/img_1.png",
-                "img_portfolio/img_portfolio_postgresql/img_2.png",
-                "img_portfolio/img_portfolio_postgresql/img_3.png",
-                "img_portfolio/img_portfolio_postgresql/img_4.png",
-                "img_portfolio/img_portfolio_postgresql/img_5.png",
-                "img_portfolio/img_portfolio_postgresql/img_6.png",
-                "img_portfolio/img_portfolio_postgresql/img_7.png"
-            ]
-        },
-
-
-        sqlserver: {
-            title: "SQL Server",
-            images: [
-                "img_portfolio/img_portfolio_sqlserver/img_1.png",
-                "img_portfolio/img_portfolio_sqlserver/img_2.png",
-                "img_portfolio/img_portfolio_sqlserver/img_3.png",
-                "img_portfolio/img_portfolio_sqlserver/img_4.png",
-                "img_portfolio/img_portfolio_sqlserver/img_5.png",
-                "img_portfolio/img_portfolio_sqlserver/img_6.png"
-            ]
-        },
-
-
-        mysql: {
-            title: "MySQL",
-            images: [
-                "img_portfolio/img_portfolio_mysql/img_1.png",
-                "img_portfolio/img_portfolio_mysql/img_2.png",
-                "img_portfolio/img_portfolio_mysql/img_3.png",
-                "img_portfolio/img_portfolio_mysql/img_4.png",
-                "img_portfolio/img_portfolio_mysql/img_5.png",
-                "img_portfolio/img_portfolio_mysql/img_6.png",
-                "img_portfolio/img_portfolio_mysql/img_7.png"
-            ]
-        },
-
-
-        excel: {
-            title: "Microsoft Excel",
-            images: [
-                "img_portfolio/img_portfolio_excel/img_1.png",
-                "img_portfolio/img_portfolio_excel/img_2.png",
-                "img_portfolio/img_portfolio_excel/img_3.png",
-                "img_portfolio/img_portfolio_excel/img_4.png",
-                "img_portfolio/img_portfolio_excel/img_5.png",
-                "img_portfolio/img_portfolio_excel/img_6.png"
-
-            ]
-        }
-
-    };
-
-
-
-    /* =====================================================
-       PORTFOLIO SLIDER UTAMA
-       ===================================================== */
-
-    const portfolioSwiper = new Swiper('.portfolio-swiper', {
-
-        slidesPerView: 3,
-
-        spaceBetween: 30,
-
-        grabCursor: true,
-
-        navigation: {
-            nextEl: '.portfolio-next',
-            prevEl: '.portfolio-prev'
-        },
-
-        scrollbar: {
-            el: '.portfolio-scrollbar',
-            draggable: true
-        },
-
-        breakpoints: {
-
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
+            postgresql: {
+                title: "PostgreSQL",
+                images: [
+                    "img_portfolio/img_portfolio_postgresql/img_1.png",
+                    "img_portfolio/img_portfolio_postgresql/img_2.png",
+                    "img_portfolio/img_portfolio_postgresql/img_3.png",
+                    "img_portfolio/img_portfolio_postgresql/img_4.png",
+                    "img_portfolio/img_portfolio_postgresql/img_5.png",
+                    "img_portfolio/img_portfolio_postgresql/img_6.png",
+                    "img_portfolio/img_portfolio_postgresql/img_7.png"
+                ]
             },
 
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 25
+            sqlserver: {
+                title: "SQL Server",
+                images: [
+                    "img_portfolio/img_portfolio_sqlserver/img_1.png",
+                    "img_portfolio/img_portfolio_sqlserver/img_2.png",
+                    "img_portfolio/img_portfolio_sqlserver/img_3.png",
+                    "img_portfolio/img_portfolio_sqlserver/img_4.png",
+                    "img_portfolio/img_portfolio_sqlserver/img_5.png",
+                    "img_portfolio/img_portfolio_sqlserver/img_6.png"
+                ]
             },
 
-            992: {
+            mysql: {
+                title: "MySQL",
+                images: [
+                    "img_portfolio/img_portfolio_mysql/img_1.png",
+                    "img_portfolio/img_portfolio_mysql/img_2.png",
+                    "img_portfolio/img_portfolio_mysql/img_3.png",
+                    "img_portfolio/img_portfolio_mysql/img_4.png",
+                    "img_portfolio/img_portfolio_mysql/img_5.png",
+                    "img_portfolio/img_portfolio_mysql/img_6.png",
+                    "img_portfolio/img_portfolio_mysql/img_7.png"
+                ]
+            },
+
+            excel: {
+                title: "Microsoft Excel",
+                images: [
+                    "img_portfolio/img_portfolio_excel/img_1.png",
+                    "img_portfolio/img_portfolio_excel/img_2.png",
+                    "img_portfolio/img_portfolio_excel/img_3.png",
+                    "img_portfolio/img_portfolio_excel/img_4.png",
+                    "img_portfolio/img_portfolio_excel/img_5.png",
+                    "img_portfolio/img_portfolio_excel/img_6.png"
+                ]
+            }
+
+        };
+
+
+        /* =====================================================
+        PORTFOLIO SLIDER UTAMA
+        ===================================================== */
+
+        const portfolioSwiper =
+            new Swiper('.portfolio-swiper', {
+
                 slidesPerView: 3,
-                spaceBetween: 30
-            }
 
-        }
+                spaceBetween: 30,
 
-    });
+                grabCursor: true,
 
+                navigation: {
+                    nextEl: '.portfolio-next',
+                    prevEl: '.portfolio-prev'
+                },
 
+                scrollbar: {
+                    el: '.portfolio-scrollbar',
+                    draggable: true
+                },
 
-    /* =====================================================
-       ELEMENT MODAL
-       ===================================================== */
+                breakpoints: {
 
-    const portfolioModal =
-        document.getElementById('portfolioModal');
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
 
-    const portfolioModalTitle =
-        document.getElementById('portfolioModalTitle');
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 25
+                    },
 
-    const portfolioDetailWrapper =
-        document.querySelector(
-            '.portfolio-detail-swiper .swiper-wrapper'
-        );
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    }
 
-
-
-    /* =====================================================
-       DETAIL SWIPER
-       ===================================================== */
-
-    let portfolioDetailSwiper = null;
-
-
-
-    /* =====================================================
-       KETIKA COVER PORTFOLIO DIKLIK
-       ===================================================== */
-
-    const portfolioCovers =
-        document.querySelectorAll('.portfolio-cover');
-
-
-    portfolioCovers.forEach(function(cover) {
-
-        cover.addEventListener('click', function() {
-
-            const projectName =
-                cover.dataset.project;
-
-            const startIndex =
-                parseInt(cover.dataset.index) || 0;
-
-            const project =
-                portfolioProjects[projectName];
-
-
-            if (!project) {
-                return;
-            }
-
-
-
-            /* Judul modal */
-
-            portfolioModalTitle.textContent =
-                project.title;
-
-
-
-            /* Hapus gambar lama */
-
-            portfolioDetailWrapper.innerHTML = "";
-
-
-
-            /* Masukkan semua gambar project */
-
-            project.images.forEach(function(imagePath) {
-
-                const slide =
-                    document.createElement('div');
-
-                slide.className =
-                    'swiper-slide';
-
-
-                slide.innerHTML = `
-                    <div class="swiper-zoom-container">
-                        <img
-                            src="${imagePath}"
-                            alt="${project.title}"
-                            class="portfolio-detail-image"
-                        >
-                    </div>
-                `;
-
-
-                portfolioDetailWrapper.appendChild(slide);
+                }
 
             });
 
 
+        /* =====================================================
+        ELEMENT MODAL
+        ===================================================== */
 
-            /* Jika Swiper sebelumnya masih ada,
-               hancurkan terlebih dahulu */
+        const portfolioModal =
+            document.getElementById('portfolioModal');
 
-            if (portfolioDetailSwiper) {
+        const portfolioModalTitle =
+            document.getElementById('portfolioModalTitle');
 
-                portfolioDetailSwiper.destroy(
-                    true,
-                    true
-                );
-
-                portfolioDetailSwiper = null;
-
-            }
-
-
-
-            /* Tampilkan modal */
-
-            const modal =
-                bootstrap.Modal.getOrCreateInstance(
-                    portfolioModal
-                );
-
-            modal.show();
+        const portfolioDetailWrapper =
+            document.querySelector(
+                '.portfolio-detail-swiper .swiper-wrapper'
+            );
 
 
+        /* =====================================================
+        DETAIL SWIPER
+        ===================================================== */
 
-            /* Buat Swiper setelah modal tampil */
-
-            portfolioModal.addEventListener(
-                'shown.bs.modal',
-                function initializeDetailSwiper() {
-
-
-                    portfolioDetailSwiper =
-                        new Swiper(
-                            '.portfolio-detail-swiper',
-                            {
-
-                                initialSlide:
-                                    startIndex,
-
-                                spaceBetween: 20,
-
-                                grabCursor: true,
-
-                                zoom: {
-                                    maxRatio: 4
-                                },
-
-                                navigation: {
-
-                                    nextEl:
-                                        '.portfolio-detail-next',
-
-                                    prevEl:
-                                        '.portfolio-detail-prev'
-
-                                },
-
-                                scrollbar: {
-
-                                    el:
-                                        '.portfolio-detail-scrollbar',
-
-                                    draggable: true
-
-                                },
-
-                                keyboard: {
-
-                                    enabled: true
-
-                                },
-
-                                observer: true,
-
-                                observeParents: true
-
-                            }
-                        );
+        let portfolioDetailSwiper = null;
 
 
-                    /* Hanya jalankan event ini
-                       satu kali */
+        /* =====================================================
+        KETIKA COVER PORTFOLIO DIKLIK
+        ===================================================== */
 
-                    portfolioModal.removeEventListener(
-                        'shown.bs.modal',
-                        initializeDetailSwiper
+        const portfolioCovers =
+            document.querySelectorAll('.portfolio-cover');
+
+
+        portfolioCovers.forEach(function(cover) {
+
+            cover.addEventListener('click', function() {
+
+                const projectName =
+                    cover.dataset.project;
+
+                const startIndex =
+                    parseInt(cover.dataset.index) || 0;
+
+                const project =
+                    portfolioProjects[projectName];
+
+
+                /* Jika project tidak ditemukan */
+
+                if (!project) {
+                    return;
+                }
+
+
+                /* =================================================
+                JUDUL MODAL
+                ================================================= */
+
+                portfolioModalTitle.textContent =
+                    project.title;
+
+
+                /* =================================================
+                HAPUS GAMBAR LAMA
+                ================================================= */
+
+                portfolioDetailWrapper.innerHTML = "";
+
+
+                /* =================================================
+                MASUKKAN SEMUA GAMBAR PROJECT
+                ================================================= */
+
+                project.images.forEach(function(imagePath) {
+
+                    const slide =
+                        document.createElement('div');
+
+                    slide.className =
+                        'swiper-slide';
+
+
+                    slide.innerHTML = `
+                        <div class="swiper-zoom-container">
+                            <img
+                                src="${imagePath}"
+                                alt="${project.title}"
+                                class="portfolio-detail-image"
+                            >
+                        </div>
+                    `;
+
+
+                    portfolioDetailWrapper.appendChild(slide);
+
+                });
+
+
+                /* =================================================
+                HANCURKAN SWIPER SEBELUMNYA
+                ================================================= */
+
+                if (portfolioDetailSwiper) {
+
+                    portfolioDetailSwiper.destroy(
+                        true,
+                        true
                     );
 
-                },
-                {
-                    once: true
+                    portfolioDetailSwiper = null;
+
                 }
-            );
+
+
+                /* =================================================
+                    TAMPILKAN MODAL
+                ================================================= */
+
+                const modal =
+                    bootstrap.Modal.getOrCreateInstance(
+                        portfolioModal
+                    );
+
+                modal.show();
+
+
+                /* =================================================
+                BUAT DETAIL SWIPER SETELAH MODAL TERLIHAT
+                ================================================= */
+
+                portfolioModal.addEventListener(
+                    'shown.bs.modal',
+                    function createDetailSwiper() {
+
+                        portfolioDetailSwiper =
+                            new Swiper(
+                                '.portfolio-detail-swiper',
+                                {
+                                    initialSlide: startIndex,
+
+                                    spaceBetween: 20,
+
+                                    grabCursor: true,
+
+                                    zoom: {
+                                        maxRatio: 4
+                                    },
+
+                                    navigation: {
+                                        nextEl:
+                                            '.portfolio-detail-next',
+
+                                        prevEl:
+                                            '.portfolio-detail-prev'
+                                    },
+
+                                    scrollbar: {
+                                        el:
+                                            '.portfolio-detail-scrollbar',
+
+                                        draggable: true
+                                    },
+
+                                    keyboard: {
+                                        enabled: true
+                                    },
+
+                                    observer: true,
+
+                                    observeParents: true
+                                }
+                            );
+
+                        portfolioDetailSwiper.update();
+
+                    },
+                    {
+                        once: true
+                    }
+                );
+
+
+                /* =================================================
+                UPDATE SWIPER SETELAH MODAL TERLIHAT
+                ================================================= */
+
+                portfolioModal.addEventListener(
+                    'shown.bs.modal',
+                    function updateDetailSwiper() {
+
+                        if (portfolioDetailSwiper) {
+
+                            portfolioDetailSwiper.update();
+
+                        }
+
+                    },
+                    {
+                        once: true
+                    }
+                );
+
+            });
 
         });
 
-    });
+
+        /* =====================================================
+        KETIKA MODAL DITUTUP
+        ===================================================== */
+
+        portfolioModal.addEventListener(
+            'hidden.bs.modal',
+            function() {
+
+                if (portfolioDetailSwiper) {
+
+                    portfolioDetailSwiper.destroy(
+                        true,
+                        true
+                    );
+
+                    portfolioDetailSwiper = null;
+
+                }
 
 
-
-    /* =====================================================
-       KETIKA MODAL DITUTUP
-       ===================================================== */
-
-    portfolioModal.addEventListener(
-        'hidden.bs.modal',
-        function() {
-
-            if (portfolioDetailSwiper) {
-
-                portfolioDetailSwiper.destroy(
-                    true,
-                    true
-                );
-
-                portfolioDetailSwiper = null;
+                portfolioDetailWrapper.innerHTML = "";
 
             }
+        );
 
-
-            portfolioDetailWrapper.innerHTML = "";
-
-        }
-    );
-
-</script>
+    </script>
 
 
 </body>
